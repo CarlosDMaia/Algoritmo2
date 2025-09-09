@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int somasequencial (int n){
+    int i, soma = 0;
+    for(i = 0; i <= n; i++){
+        soma = soma + i;
+    }
+        return soma;
+}
+
+int main()
+{
+    int n;
+    int resultado;
+    printf("Digite quantos numeros sequenciais quer somar: \n");
+    scanf("%d", &n);
+    resultado = somasequencial(n);
+    printf("A resultado e: %d", resultado);
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    double p1, p2, sequencia;
+
+    printf("Digite o primeiro valor de parametro: \n");
+    scanf("%lf", &p1);
+    printf("Digite o segundo valor de parametro: \n");
+    scanf("%lf", &p2);
+
+
+    while(1){
+        printf("Digite um numero: \n");
+        scanf("%lf", &sequencia);
+        if(sequencia < 0){
+            break;
+        }
+    }
+    return 0;
+}
