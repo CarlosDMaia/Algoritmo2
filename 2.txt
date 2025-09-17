@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void calcularMedia (float a, float b){
+
+    float valor = 0, soma = 0, media = 0;
+    int contador = 0;
+
+    do {
+
+        printf ("Digite um numero real (negativo para)");
+        scanf("%f", &valor);
+
+        if (valor <= a && valor >= b){
+            soma += valor;
+            contador ++;
+        }
+
+    }while (valor >= 0);
+
+    media = soma / contador;
+    printf("%f", media);
+}
+
+int main()
+{
+    float p1, p2;
+
+    printf("Digite o primeiro valor de parametro: \n");
+    scanf("%f", &p1);
+    printf("Digite o segundo valor de parametro: \n");
+    scanf("%f", &p2);
+
+    calcularMedia(p1, p2);
+
+}
